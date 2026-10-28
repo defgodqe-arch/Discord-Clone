@@ -61,7 +61,7 @@ body,
     --muted-foreground: 24 5.4% 63.9%;
 
     --accent: 12 6.5% 15.1%;
-    --accent-foreground: 60 9.1% 97.8%;
+    --accent-foreground: 24 9.8% 97.8%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 60 9.1% 97.8%;
@@ -79,4 +79,29 @@ body,
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Neon-yellow replacement for purple/violet icons throughout the app. */
+:root {
+  --neon-yellow: #eaff00;
+}
+
+svg.text-purple-300,
+svg.text-purple-400,
+svg.text-purple-500,
+svg.text-purple-600,
+svg.text-violet-300,
+svg.text-violet-400,
+svg.text-violet-500,
+svg.text-violet-600,
+.text-purple-300 svg,
+.text-purple-400 svg,
+.text-purple-500 svg,
+.text-purple-600 svg,
+.text-violet-300 svg,
+.text-violet-400 svg,
+.text-violet-500 svg,
+.text-violet-600 svg {
+  color: var(--neon-yellow) !important;
+  stroke: var(--neon-yellow) !important;
 }
